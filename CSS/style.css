@@ -1,0 +1,242 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    margin-top: -18px;
+    background: url(../IMG/header.jpg) no-repeat center top / cover;
+    height: 1100px;
+    width: auto;
+    /* margin: 0; */
+}
+.conteiner {
+    margin-left: 127px;
+    height: auto;
+    width: 1000px;
+     padding-top: 50px;
+
+}
+.about a {
+    text-decoration: none;
+}
+.about button {
+   margin-left:0;
+   border-radius: 37px; 
+    border: none;
+    margin-top: 225px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #FF6C17;
+    transition: 1s;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+.about button:hover {
+     background-color:green;
+ }
+.hidden {
+    display: none;
+
+}
+.hidden1 {
+    display: none;
+
+}
+.menu a {
+    text-decoration: none;
+    color: #17FF45;
+    position: relative;
+    transition: 0.5s;
+    padding-bottom: 3px;
+}
+.menu li {
+    list-style-type: none;
+    float: right;
+    margin-right: 150px;
+}
+.menu a::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    transition: 1s;
+}   
+.menu a:hover:before {
+    width: 100%;
+}   
+.menu a:hover {
+    color: yellow;
+  
+}
+.globalHidden {
+    background: #fff;
+    margin-top: 150px;
+    height: 300px;
+    color: #000;
+}
+
+.text {
+    background: url("../IMG/fone\ .jpg")  no-repeat center top / cover;
+    transition:3s;
+    color: #000;
+    height: 500px;
+    width: auto;
+}
+
+#text {
+    position: relative;
+    cursor: pointer;
+  }
+.content {
+   padding-left: 50px;
+   padding-top: 50px;
+}
+@media (min-width:0) and (max-width:320px) {
+    .menu {
+        display: flex;
+    }
+    .menu li {
+        list-style-type: none;
+        margin-right: -224px;
+        /* float: left; */
+        margin-left: 64px;
+    }
+    .globalHidden {
+    background: #fff;
+    margin-top: 150px;
+    height: 300px;
+    width: 272px;
+    color: #000;
+    margin-right: 20px;
+    margin-left: -102px;
+    }
+    .about button {
+        margin-left: -113px;
+        border-radius: 37px;
+        border: none;
+        margin-top: 225px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #FF6C17;
+        transition: 1s;
+    }
+    .text {
+        background: url(../IMG/fone\ .jpg) no-repeat center top / cover;
+        transition: 3s; 
+        color: #000;
+        height: 500px;
+        margin-left: -111px;
+        width: 302px;
+    }
+}
+@media (min-width:321px) and (max-width:420px) {
+    .menu {
+        display: flex;
+    }
+    .menu li {
+        list-style-type: none;
+        margin-right: -224px;
+        /* float: left; */
+        margin-left: 64px;
+    }
+    .globalHidden {
+        background: #fff;
+        margin-top: 150px;
+        height: 300px;
+        width: 322px;
+        color: #000;
+        margin-right: 20px;
+        margin-left: -102px;
+    }
+    .about button {
+        margin-left: -113px;
+        border-radius: 37px;
+        border: none;
+        margin-top: 225px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #FF6C17;
+        transition: 1s;
+    }
+    .text {
+        background: url(../IMG/fone\ .jpg) no-repeat center top / cover;
+        transition: 3s;
+        color: #000;
+        height: 500px;
+        margin-left: -111px;
+        width: 384px;
+    }
+}
+@media (min-width:421px) and (max-width:520px) {
+    .menu {
+        display: flex;
+    }
+    .menu li {
+        list-style-type: none;
+        margin-right: -430px;
+        /* float: left; */
+        margin-left: 202px;
+    }
+    .globalHidden {
+        background: #fff;
+        margin-top: 150px;
+        height: 300px;
+        width: 322px;
+        color: #000;
+        margin-right: 20px;
+        margin-left: -102px;
+    }
+    .about button {
+        margin-left: -113px;
+        border-radius: 37px;
+        border: none;
+        margin-top: 225px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #FF6C17;
+        transition: 1s;
+    }
+    .text {
+        background: url(../IMG/fone\ .jpg) no-repeat center top / cover;
+        transition: 3s;
+        color: #000;
+        height: 500px;
+        margin-left: -111px;
+        width: 384px;
+    }
+}

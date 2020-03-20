@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <header class="header">
+        <div class="conteiner">
+        
+                <ul class="menu">
+                    <li>
+                        <a href="#" id="partners">Партнер</a>
+                    </li>
+                    <li>
+                        <a href="#" id="about" class="js-button1" >О нас  </a>
+                    </li>   
+                    <li>
+                        <a href="#"   id="global" id="global2">Главная</a>
+                    </li> 
+
+                </ul>
+                <div class="js-container1 hidden1" >
+                    <div class="globalHidden">
+                        Ваш текст
+                    </div>
+               
+            </div>
+
+
+
+            <script>
+                ;(function($D){
+                    var $button    = $D.querySelector('.js-button1'),
+                        $container = $D.querySelector('.js-container1');
+                  
+                    $button.addEventListener('click', function(e){
+                      var data = e.target.dataset,
+                          toggleText = $button.innerHTML,
+                          isVisible = $container.style.display == 'block';
+                      
+                      $button.innerHTML = data.toggleText;
+                      data.toggleText = toggleText;
+                      
+                      $container.style.display = isVisible ? 'none' : 'block';
+                    });
+                })(document);
+
+              
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="about">
+                <button  class="js-button" id="jsButton" data-toggle-text="Почему мы?">
+                   Почему мы?
+                </button>
+            </div>
+            <div class="js-container hidden">
+                <div class="text" id="text">
+                    <div class="content">
+                        <h1>
+                            Почему мы?
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <script>
+                ;(function($D){
+                    var $button    = $D.querySelector('.js-button'),
+                        $container = $D.querySelector('.js-container');
+                  
+                    $button.addEventListener('click', function(e){
+                      var data = e.target.dataset,
+                          toggleText = $button.innerHTML,
+                          isVisible = $container.style.display == 'block';
+                      
+                      $button.innerHTML = data.toggleText;
+                      data.toggleText = toggleText;
+                      
+                      $container.style.display = isVisible ? 'none' : 'block';
+                    });
+                })(document);
+
+              
+            </script>
+            <script src="JS/test.js"></script>
+        
+        </header>
+</body>
+</html>
